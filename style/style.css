@@ -1,0 +1,222 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Kumbh+Sans", sans-serif;
+  --orangeColor: hsl(26, 100%, 55%);
+  --paleOrangeColor: hsl(25, 100%, 94%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --grayColor: rgba(66, 66, 66, 0.75);
+  --blackColor: hsl(0, 0%, 0%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border-bottom: 1px solid var(--grayColor);
+  height: 7rem;
+}
+
+.liNavigation {
+  color: var(--grayColor);
+}
+
+.liNavigation:hover {
+  color: var(--blackColor);
+  cursor: pointer;
+  border-bottom: 3px solid var(--orangeColor);
+}
+
+#counterBuy {
+  display: none;
+  position: relative;
+  transform: translateX(-100%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--orangeColor);
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.avatar:hover {
+  border-radius: 50%;
+  border: 3px solid var(--orangeColor);
+  cursor: pointer;
+}
+
+.mainImage {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 45px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imageCollection {
+  height: 7rem;
+  width: 29rem;
+  overflow-x: hidden;
+}
+
+.image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 7px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  filter: opacity(50%);
+}
+
+.pOrange {
+  color: var(--orangeColor);
+  font-size: 16px;
+}
+
+.h1Black {
+  color: var(--blackColor);
+  font-weight: 600;
+}
+
+.pGray {
+  color: var(--grayColor);
+  font-size: 14px;
+}
+
+.offPrice {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.off {
+  width: 50px;
+  min-height: 2rem;
+  color: var(--orangeColor);
+  background-color: var(--paleOrangeColor);
+  border-radius: 10px;
+  margin-block-start: 0em;
+}
+
+.mainPrice {
+  color: var(--grayColor);
+  text-decoration: line-through;
+}
+
+.addToCartButton {
+  height: 3rem;
+  color: var(--whiteColor);
+  background: var(--orangeColor);
+  border-radius: 10px;
+  border: none;
+  outline: 0;
+}
+
+svg:hover {
+  cursor: pointer;
+}
+
+.numsOfShoesDiv {
+  width: 100%;
+  background-color: var(--paleOrangeColor);
+  border-radius: 10px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.575);
+  overflow: hidden;
+  display: none;
+}
+
+.closeTag {
+  position: relative;
+  fill: white;
+  transform: translateX(60rem);
+  top: 2rem;
+}
+
+.modalImage {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 10px;
+}
+
+.modalImageColletion {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 7px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modalImageColletion:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  filter: opacity(50%);
+}
+
+.nextIconContainer {
+  position: relative;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--whiteColor);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.perviousIconContainer {
+  position: relative;
+  transform: translateX(50%);
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--whiteColor);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.myHeader{
+  min-height: 3rem;
+  border-bottom: 2px solid var(--grayColor);
+}
+
+.cartModal{
+  display: none;
+  position: absolute;
+  background: var(--whiteColor);
+  height: 18rem;
+  width: 20rem;
+  padding: 10px 0 10px 0;
+  transform: translateX(141%);
+  top: 5.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 7px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cartImage{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10px;
+}
+
+.informationOfBuy{
+  display: block;
+  padding: 0 15px 0 15px;
+  width: 20rem;
+  height: 5rem;
+}
+
+.show{
+  display: block;
+}

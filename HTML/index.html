@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Product page</title>
+  </head>
+
+  <body>
+    <main class="flex-column w-75 h-100">
+      <header
+        class="
+          header
+          container
+          w-100
+          d-flex
+          justify-content-between
+          align-items-center
+        "
+      >
+        <h2 class="col-2" id="brandName">sneakers</h2>
+        <nav class="navigation col-6 h-100 d-flex align-items-center">
+          <ul class="nav h-100 d-flex align-items-center" id="ulNavigation">
+            <li class="liNavigation h-100 d-flex align-items-center mx-2">
+              Collection
+            </li>
+            <li class="liNavigation h-100 d-flex align-items-center mx-2">
+              Men
+            </li>
+            <li class="liNavigation h-100 d-flex align-items-center mx-2">
+              Women
+            </li>
+            <li class="liNavigation h-100 d-flex align-items-center mx-2">
+              Contact
+            </li>
+            <li class="liNavigation h-100 d-flex align-items-center mx-2">
+              Anout
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="profile col-4 d-flex justify-content-end align-items-center"
+        >
+          <div class="cartIcon d-flex flex-row align-items-center">
+            <svg
+              class="mx-3"
+              width="22"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="#69707D"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <p class="text-center justify-content-center" id="counterBuy"></p>
+          </div>
+          <img class="avatar img-fluid mx-3" src="../assest/image-avatar.png" />
+        </div>
+      </header>
+      <section class="container d-flex">
+        <figure class="figure col-6 p-5">
+          <img
+            class="mainImage img-fluid"
+            src="../assest/image-product-1.jpg"
+          />
+          <div
+            class="
+              imageCollection
+              w-100
+              d-flex
+              flex-row
+              mt-4
+              justify-content-between
+            "
+          >
+            <img class="image" alt="1" src="../assest/image-product-1-thumbnail.jpg" />
+            <img class="image" alt="2" src="../assest/image-product-2-thumbnail.jpg" />
+            <img class="image" alt="3" src="../assest/image-product-3-thumbnail.jpg" />
+            <img class="image" alt="4" src="../assest/image-product-4-thumbnail.jpg" />
+          </div>
+        </figure>
+        <article class="col-6 d-flex flex-column p-5 align-self-center">
+          <p class="pOrange">SNEAKERS COMPANY</p>
+          <h1 class="h1Black">Fall Limited Edition Sneakers</h1>
+          <p class="pGray">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, dolore
+            laboriosam cum ullam cumque doloremque eum excepturi, debitis
+            voluptate at qui facere laudantium et optio assumenda sit officiis
+            nostrum sunt.
+          </p>
+          <div class="priceDiv d-flex flex-row">
+            <p class="offPrice mx-2">0$</p>
+            <p
+              class="off mx-2 d-flex align-items-center justify-content-center"
+            >
+              50%
+            </p>
+          </div>
+          <p class="mainPrice">0$</p>
+          <div class="addToCart d-flex flex-row">
+            <div
+              class="
+                numsOfShoesDiv
+                w-50
+                d-flex
+                justify-content-around
+                align-items-center
+                mx-4
+              "
+            >
+              <svg
+              class="minusIcon"
+                width="12"
+                height="4"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <path
+                    d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z"
+                    id="a"
+                  />
+                </defs>
+                <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a" />
+              </svg>
+              <span class="numsOfShoesSpan">0</span>
+              <svg
+              class="plusIcon"
+                width="12"
+                height="12"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <path
+                    d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
+                    id="b"
+                  />
+                </defs>
+                <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b" />
+              </svg>
+            </div>
+            <button
+              type="button"
+              class="
+                addToCartButton
+                mx-4
+                w-50
+                d-flex
+                justify-content-around
+                align-items-center
+              "
+            >
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill="#69707D"
+                  fill-rule="nonzero"
+                /></svg
+              >Add to cart
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <section class="modal w-100 h-100">
+      <svg
+        class="closeTag"
+        width="18"
+        height="19"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+          fill="#69707D"
+          fill-rule="evenodd"
+        />
+      </svg>
+      <figure
+        class="
+          w-100
+          h-100
+          d-flex
+          flex-column
+          align-items-center
+          justify-content-around
+        "
+      >
+        <div
+          class="
+            mainCollection
+            w-100
+            h-50
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <div
+            class="
+              perviousIconContainer
+              d-flex
+              align-items-center
+              justify-content-center
+              text-center
+            "
+          >
+            <svg
+              class="nextIcon"
+              width="12"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 1 3 9l8 8"
+                stroke="#1D2026"
+                stroke-width="3"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <img src="../assest/image-product-1.jpg" class="modalImage" />
+          <div
+            class="
+            nextIconContainer
+              d-flex
+              align-items-center
+              justify-content-center
+            "
+          >
+            <svg
+              class="perviousIcon"
+              width="13"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m2 1 8 8-8 8"
+                stroke="#1D2026"
+                stroke-width="3"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="imageCollection d-flex flex-row justify-content-around"
+        >
+          <img
+            class="modalImageColletion mx-2"
+            src="../assest/image-product-1-thumbnail.jpg"
+            alt="1"
+          />
+          <img
+            class="modalImageColletion mx-2"
+            src="../assest/image-product-2-thumbnail.jpg"
+            alt='2'
+          />
+          <img
+            class="modalImageColletion mx-2"
+            src="../assest/image-product-3-thumbnail.jpg"
+            alt="3"
+          />
+          <img
+            class="modalImageColletion mx-2"
+            src="../assest/image-product-4-thumbnail.jpg"
+            alt="4"
+            />
+        </div>
+      </figure>
+    </section>
+    <section class="cartModal">
+        <header class="myHeader mb-3">
+            <p class="h-100 px-3">Cart</p>
+        </header>
+        <article class="informationOfBuy d-flex flex-row">
+            
+        </article>
+    </section> 
+  </body>
+  <script src="../app/app.js"></script>
+</html>
